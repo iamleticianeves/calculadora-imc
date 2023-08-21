@@ -40,7 +40,7 @@ function countIMC(){
     result = 'abaixo do peso';
      }else if(18.5<=imc&&imc<=24.9){
     result = 'saudável';
-     }else if(25<=imc&&imc<=29.9){
+     }else if(25<=imc&&imc<=29.9){3
     result = 'acima do peso';
      }else if(30<=imc&&imc<=34.9){
     result = 'obeso(a)';

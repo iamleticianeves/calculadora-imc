@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -11,13 +11,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     background: url('assets/1311312_412.jpg') no-repeat;
+
 }
 
 .box {
-    width: 450px;
-    height: 780px;
+    width: 500px;
+    height: 600px;
     background: #fafafa;
     border-radius: 12px;
     text-align: center;
@@ -27,37 +27,37 @@ body{
 h1 {
     color: rgba(0, 0, 0, 0.7);
     font-weight: bold;
-    font-size: 36px;
-    padding: 30px 0;
+    font-size: 18px;
+    padding: 20px 0;
 }
 
 .content {
-    padding: 0 30px;
+    padding: 0 20px;
 }
 
 .input {
     background: #fff;
-    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 45px -30px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
     padding: 20px 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
-
+/*input idade*/
 .input label {
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: #000;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .input input {
     outline: none;
     border: none;
     border-bottom: 1px solid #4f7df9;
-    width: 50%;
+    width: 30%;
     text-align: center;
-    font-size: 28px;
+    font-size: 20px;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -69,10 +69,9 @@ h1 {
     margin-bottom: 20px;
 }
 
-
 .inputW label {
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: #000;
     margin-bottom: 20px;
@@ -81,7 +80,7 @@ h1 {
     outline: none;
     border: none;
     border-bottom: 1px solid #4f7df9;
-    width: 50%;
+    width: 40%;
     text-align: center;
     font-size: 28px;
     font-family: "Nunito", sans-serif;
@@ -99,7 +98,7 @@ h1 {
 
 .inputH label {
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color: #000;
     margin-bottom: 20px;
@@ -108,7 +107,7 @@ h1 {
     outline: none;
     border: none;
     border-bottom: 1px solid #4f7df9;
-    width: 50%;
+    width: 40%;
     text-align: center;
     font-size: 28px;
     font-family: "Nunito", sans-serif;
@@ -134,44 +133,52 @@ button.calculate:hover {
 }
 
 .result {
-    padding: 10px 20px;
+    padding: 6px;
 }
-
+/*Seu IMC é de*/
 .result p {
     font-weight: 600;
-    font-size: 22px;
+    font-size: 18px;
     color: #000;
-    margin-bottom: 15px;
+    margin-bottom: 4px;
+    margin-left: 14px;
+    margin-right: 14px;
 }
-
+/*Você está... */
 .result #result {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 900;
     color: #4f7df9;
     background-color: #eaeaea;
-    display: inline-block;
-    padding: 7px 20px;
+    display:inline-flex;
+    padding: 5px 10px;
     border-radius: 55px;
-    margin-bottom: 25px;
+    margin-bottom: 9px;
+    
 }
 
 #comment {
     color: #4f7df9;
     font-weight: 700;
+    
 }
 
 .comment {
     display: none;
     border: dotted 0.9px;
     border-radius: 7px;
-    padding: 5px;
+    padding: 14px;
+    margin-bottom: 20px;
+    margin-left: 14px;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 15px
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-top: -6px;
 }
 
 .footer-text::before{
@@ -179,20 +186,17 @@ button.calculate:hover {
     color: rgba(40, 40, 40, 0.8);
     font-family: 'Poppins', sans-serif;
     font-weight: 200;
-    font-size: 14px;
+    font-size: 10px;
     transition: all 0.5;
     padding: 20px;
-    
+    margin-top: 10px;
 }
 
-.result p + .result #result + .footer .footer-text{
-    content-visibility: hidden;
-}
 
 .footer-text:hover {
     color: rgba(33, 150, 243);
+    margin-bottom: 40px;
 }
-
 
 .gender {
     display: flex;
@@ -203,17 +207,17 @@ button.calculate:hover {
     box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
     padding: 20px 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .gender .container {
     display: block;
     position: relative;
     padding-left: 35px;
-/* margin-bottom: 12px; */
+    margin-bottom: 12px; 
     margin-top: 7px;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 16px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -224,6 +228,7 @@ button.calculate:hover {
     position: absolute;
     opacity: 0;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .checkmark {
@@ -268,6 +273,7 @@ button.calculate:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: -10px;
 }
 
 /* The Modal (background) */
@@ -279,7 +285,7 @@ button.calculate:hover {
     left: 0;
     top: 0;
     width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    height: 60%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -295,12 +301,13 @@ button.calculate:hover {
     width: 600px;
     border-radius: 10px;
     box-shadow: #393c76 -1px 2px 2px 1px;
+
 }
 
 #modalText {
     padding-top: 8px;
     padding-right: 5px;
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Poppins', sans-serif;
     color: rgb(24, 23, 23);
 }
@@ -335,7 +342,7 @@ button.calculate:hover {
     left: -0px;
     border-radius: 5px;
     bottom: -0px;
-    font-size: 16px;
+    font-size:  6px;
     font-weight: 400;
     color: #fff;
     text-decoration: none;
@@ -355,7 +362,7 @@ button.calculate:hover {
 @media (max-width: 700px){
 
 .box {
-    width: 380px;
+    width: 270px;
 }
 
 .input label {
@@ -367,11 +374,10 @@ button.calculate:hover {
 }
 
 .input input, .inputH input, .inputW input{
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .modal-content {
-
   width: 380px;
 }
 
